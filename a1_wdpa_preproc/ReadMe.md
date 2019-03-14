@@ -41,13 +41,14 @@ N.B. direct import in GRASS of PG views with v.in.ogr randomly fails on about 20
 
 ## 7. import as external link of all rasters required for subsequent analysis (`exec_link_rasters.sh` and its slaves `link_rasters_wgs84ll.sh`, `link_rasters_mollweide.sh` and `link_rasters_sst.sh) 
 7.1 All rasters to be analysed for computation of indicators have been grouped in two major categories:
-    * categorical rasters: raster representing classes, such as Land Cover, Built up, etc. For those rasters, the area of each class within each PA needs to be calculated. Therefore, rasters datasets distributed in LatLong need to be previously reprojected in Mollweide in order to compute equivalent areas.
-    * continuous rasters: raster representing continuous values such as elevation, temperature, etc. For those rasters, standard statistics for each PA need to be computed. Therefore, such raster can be analysed in their native projection.
-    Such rasters are imported in two different mapsets according to  type:
-		- mapset CATRASTERS is used for categorical rasters
-		- mapset CONRASTERS is used for continous rasters
+- categorical rasters: raster representing classes, such as Land Cover, Built up, etc. For those rasters, the area of each class within each PA needs to be calculated. Therefore, rasters datasets distributed in LatLong need to be previously reprojected in Mollweide in order to compute equivalent areas.
+- continuous rasters: raster representing continuous values such as elevation, temperature, etc. For those rasters, standard statistics for each PA need to be computed. Therefore, such raster can be analysed in their native projection.
 
-    Depending on the tool used for analysis, rasters are imported in Wgs84ll (for continuous rasters) or in Mollweide (for categorical rasters) projection, using the relevant location in the GRASS database.
+Such rasters are imported in two different mapsets according to  type:
+- mapset CATRASTERS is used for categorical rasters
+- mapset CONRASTERS is used for continous rasters
+
+Depending on the tool used for analysis, rasters are imported in Wgs84ll (for continuous rasters) or in Mollweide (for categorical rasters) projection, using the relevant location in the GRASS database.
 
 ### Prerequisites
 In order to run successfully, the workflow requires the followings:
