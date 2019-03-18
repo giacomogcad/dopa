@@ -7,11 +7,11 @@ Namely, it covers the following steps:
 1.1 Imports in PG database relevant WDPA data: access the downloaded .zip file, imports attributes and geometries of points and polygons in three distinct tables of PG database.
 	Objects are filtered as follows:
 	
-	* points: `STATUS NOT IN ('Not Reported', 'Proposed') And DESIG_ENG NOT IN ('UNESCO-MAB Biosphere Reserve') And REP_AREA > 0`
+- points: `STATUS NOT IN ('Not Reported', 'Proposed') And DESIG_ENG NOT IN ('UNESCO-MAB Biosphere Reserve') And REP_AREA > 0`
 	
-	* polygons: `STATUS NOT IN ('Not Reported', 'Proposed') And DESIG_ENG NOT IN ('UNESCO-MAB Biosphere Reserve')  And WDPAID NOT IN (903141)`
+- polygons: `STATUS NOT IN ('Not Reported', 'Proposed') And DESIG_ENG NOT IN ('UNESCO-MAB Biosphere Reserve')  And WDPAID NOT IN (903141)`
 	
-	N.B.: from February 2018: wdpaid 903141 (Primeval Beech Forests of the Carpathians and Other Regions of Europe) is excluded from all the analysis.
+N.B.: from February 2018: wdpaid 903141 (Primeval Beech Forests of the Carpathians and Other Regions of Europe) is excluded from all the analysis.
 	
 1.2 Buffering of point PAs. Buffer radius is computed from the 'rep_area' field.
 
