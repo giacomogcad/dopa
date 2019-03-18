@@ -17,7 +17,7 @@ N.B.: from February 2018: wdpaid 903141 (Primeval Beech Forests of the Carpathia
 
 1.3 Flagging invalid geometries and repairing them with ST_MakeValid.
 
-1.4 Creation of final wdpa table with attributes and wdpa_o20 (>20 sq.km.) table.
+1.4 Creation of final wdpa table with attributes and wdpa_o10 (>10 sq.km.) table.
 
 
 ## 2. Creation of 10 km buffers (`exec_buffers_processing.sh` and its slave `wdpa_buffers_processing.sql`)
