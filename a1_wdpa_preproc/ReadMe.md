@@ -80,7 +80,8 @@ Such rasters are imported in two different mapsets according to  type:
 Depending on the tool used for analysis, rasters are imported in Wgs84ll (for continuous rasters) or in Mollweide (for categorical rasters) projection, using the relevant location in the GRASS database.
 
 
-### Prerequisites
+
+## Prerequisites
 In order to run successfully, the workflow requires the followings:
 
 1. a PostgreSQL database with Postgis extension must exist
@@ -88,7 +89,7 @@ In order to run successfully, the workflow requires the followings:
 2. a GRASS database with two locations (one in latlong and one in Mollweide) must exist.
 
 
-### Notes
+## Notes
 - All parameters used by scripts are stored in the configuration file **wdpa_preprocessing.conf**. It has to be checked/edited before running the scripts.
 
 - Total running time on dopaprc (using NCORES=40 for step 4) is approximately 15 hours.
